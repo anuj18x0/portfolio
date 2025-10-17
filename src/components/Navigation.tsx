@@ -46,13 +46,14 @@ const Navigation = () => {
                   {item.name}
                 </motion.a>
               ))}
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="glass-card hover:bg-primary/10 border-primary/30"
+              <a
+                href="/arth_resume.pdf"
+                download
+                className="glass-card hover:bg-primary/10 border-primary/30 px-4 py-2 rounded-md border text-sm font-medium transition-colors duration-300 outline-none focus:ring-2 focus:ring-primary/40"
+                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
               >
                 Resume
-              </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -100,12 +101,14 @@ const Navigation = () => {
                   transition={{ delay: navItems.length * 0.1 }}
                   className="pt-4"
                 >
-                  <Button 
-                    variant="outline" 
-                    className="w-full glass-card hover:bg-primary/10 border-primary/30"
+                  <a
+                    href="/arth_resume.pdf"
+                    download
+                    className="w-full glass-card hover:bg-primary/10 border-primary/30 px-4 py-2 rounded-md border text-center text-sm font-medium transition-colors duration-300 outline-none focus:ring-2 focus:ring-primary/40 block"
+                    style={{ display: 'block' }}
                   >
                     Download Resume
-                  </Button>
+                  </a>
                 </motion.div>
               </div>
             </div>

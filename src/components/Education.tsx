@@ -6,7 +6,7 @@ const education = [
     degree: "B.E. Computer Science & Engineering",
     institution: "LJ University",
     period: "2023 - Present",
-    score: "CGPA: 8.71",
+    score: "CGPA: 9.44",
     status: "current"
   },
   {

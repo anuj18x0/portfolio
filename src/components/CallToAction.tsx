@@ -299,7 +299,7 @@ const CallToAction = () => {
                 </motion.a>
                 
                 <motion.a
-                  href="#"
+                  href="https://www.linkedin.com/in/arth-arvind/"
                   whileHover={{ scale: 1.05, y: -5 }}
                   className="glass-card p-4 text-center magnetic hover:bg-primary/5 transition-all duration-300"
                 >
@@ -308,7 +308,7 @@ const CallToAction = () => {
                 </motion.a>
                 
                 <motion.a
-                  href="#"
+                  href="https://github.com/anuj18x0"
                   whileHover={{ scale: 1.05, y: -5 }}
                   className="glass-card p-4 text-center magnetic hover:bg-primary/5 transition-all duration-300"
                 >

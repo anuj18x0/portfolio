@@ -45,16 +45,20 @@ const About = () => {
             viewport={{ once: true }}
             className="glass-card p-8 mb-12 magnetic"
           >
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              I'm a passionate Computer Science student at LJ University with a strong focus on 
-              full-stack development and artificial intelligence. My journey in tech has led me 
-              to create innovative solutions that bridge the gap between complex AI technologies 
-              and user-friendly interfaces.
+            <p className="text-xl font-bold leading-relaxed text-foreground mb-6">
+              I help organizations and teams achieve AI implementaion, automation and seamless digital experiences 
+              without sacrificing user experience or system reliability.
+            </p>
+            <p className="text-lg leading-relaxed text-muted-foreground mb-4">
+              As a Computer Science student at LJ University, I specialize in creating AI-powered solutions 
+              that solve real-world problems. My expertise spans from developing multi-agent AI systems 
+              for business analytics to building immersive 3D therapeutic experiences.
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              From building 3D talking avatars using React Three Fiber to developing comprehensive 
-              healthcare platforms with TensorFlow, I thrive on creating projects that push the 
-              boundaries of what's possible with modern web technologies.
+              Whether it's creating intelligent screen assistants with computer vision, developing 
+              comprehensive healthcare platforms with predictive analytics, or building engaging 
+              3D avatars for mental health support, I focus on delivering scalable, user-centric 
+              solutions that make complex technology accessible and impactful.
             </p>
           </motion.div>
 

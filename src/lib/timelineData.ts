@@ -19,9 +19,58 @@ export interface TimelineProject {
   };
   highlights: string[];
   image?: string;
+  video?: string;
 }
 
 export const timelineProjects: TimelineProject[] = [
+  {
+    id: "ai-business-analyst",
+    title: "AI Agentic Business Analyst",
+    caption: "Intelligent business analysis system using AI agents to automate reporting, data insights, and strategic recommendations.",
+    description: "Advanced AI-powered business analyst platform that leverages multiple AI agents to analyze business data, generate insights, and provide strategic recommendations. Features automated report generation, trend analysis, and predictive modeling.",
+    category: "AI/ML",
+    techStack: ["Python", "FastAPI", "LangChain", "OpenAI", "Pandas", "Streamlit", "PostgreSQL"],
+    year: "2025",
+    status: "completed",
+    metrics: {
+      performance: "90% accuracy in predictions",
+      impact: "95% time savings as compared to manual analysis"
+    },
+    links: {
+      demo: "/ai-agent-demo.mp4",
+      github: "#"
+    },
+    highlights: [
+      "Multi-agent AI system",
+      "Automated business reporting",
+      "Predictive analytics",
+      "Strategic recommendations"
+    ]
+  },
+  {
+    id: "ai-screen-assistant",
+    title: "AI Screen Assistant",
+    caption: "Smart screen analysis tool that uses computer vision and AI to understand and interact with screen content.",
+    description: "Innovative AI assistant that can analyze screen content, extract information, and provide intelligent suggestions. Uses computer vision and natural language processing to understand what's displayed and assist users accordingly.",
+    category: "AI/ML",
+    techStack: ["Python", "OpenCV", "TensorFlow", "OCR", "FastAPI", "React", "WebSockets"],
+    year: "2025",
+    status: "completed",
+    metrics: {
+      performance: "95% text recognition accuracy",
+      users: "Real-time processing"
+    },
+    links: {
+      demo: "#",
+      github: "#"
+    },
+    highlights: [
+      "Real-time screen analysis",
+      "OCR and text extraction",
+      "Intelligent content recognition",
+      "Automated user assistance"
+    ]
+  },
   {
     id: "3d-therapist",
     title: "3D Talking Avatar as a Therapist",
@@ -29,15 +78,14 @@ export const timelineProjects: TimelineProject[] = [
     description: "Revolutionary mental health platform combining React Three Fiber with Google Cloud AI and Gemini for immersive therapeutic experiences. Features real-time emotion detection, personalized response generation, and 3D avatar interactions.",
     category: "AI/ML",
     techStack: ["React", "Three.js", "Google Cloud Platforms", "Gemini", "Python", "WebSockets", "Fast API"],
-    year: "2024",
+    year: "2025",
     status: "completed",
     metrics: {
       users: "100+ sessions",
       performance: "98% accuracy",
-      impact: "85% user satisfaction"
     },
     links: {
-      demo: "#",
+      demo: "/3d-talking-avatar.mp4",
       github: "#"
     },
     highlights: [
@@ -54,7 +102,7 @@ export const timelineProjects: TimelineProject[] = [
     description: "Full-stack healthcare platform revolutionizing patient care through AI-powered diagnostics, real-time monitoring, and integrated telemedicine. Built with React, FastAPI, and TensorFlow for scalable healthcare solutions.",
     category: "AI/ML",
     techStack: ["React Vite", "FastAPI", "MongoDB", "Python", "WebSocket", "Folium", "Scikit-learn"],
-    year: "2024",
+    year: "2025",
     status: "completed",
     metrics: {
       users: "60% faster application transfer",
@@ -79,7 +127,7 @@ export const timelineProjects: TimelineProject[] = [
     description: "Enterprise-grade payroll and attendance management system featuring facial recognition technology, automated calculations, and comprehensive reporting. Streamlines HR processes with cutting-edge biometric integration.",
     category: "Web Development",
     techStack: ["React Vite", "Python", "MongoDB", "OpenCV", "FastAPI", "Docker", "Face Recognition"],
-    year: "2023",
+    year: "2024",
     status: "completed",
     metrics: {
       users: "30+ employees",
@@ -104,7 +152,7 @@ export const timelineProjects: TimelineProject[] = [
     description: "Sports analytics platform utilizing Random Forest Regressor and advanced ML models to predict IPL match outcomes. Features interactive dashboards, player performance analysis, and real-time prediction updates.",
     category: "Data Science",
     techStack: ["Streamlit", "Random Forest Regressor", "Pandas", "Matplotlib", "Python", "Scikit-learn", "Numpy", "Seaborn"],
-    year: "2023",
+    year: "2024",
     status: "completed",
     metrics: {
       performance: "85% prediction accuracy",
@@ -128,7 +176,7 @@ export const timelineProjects: TimelineProject[] = [
     description: "Social gaming platform built with React featuring user authentication, real-time polling, and interactive question categories. Includes leaderboards and social sharing capabilities.",
     category: "Web Development",
     techStack: ["HTML", "CSS", "Bootstrap", "MySQL", "Flask"],
-    year: "2023",
+    year: "2024",
     status: "completed",
     highlights: [
       "Choose one from two questions",
@@ -144,7 +192,7 @@ export const timelineProjects: TimelineProject[] = [
     description: "Enterprise inventory management solution featuring QR & barcode scanning, stock analytics, and automated supplier notifications. Built for scalability and real-time inventory tracking.",
     category: "Software",
     techStack: ["Python", "Tkinter", "MySQL", "Matplotlib", "Numpy"],
-    year: "2023",
+    year: "2024",
     status: "completed",
     highlights: [
       "QR & Barcode scanning integration",
@@ -176,7 +224,7 @@ export const timelineProjects: TimelineProject[] = [
       description: "A CLI-based system built to manage auction entries and bidding, featuring an automatic bidding capability implemented using Java Threads.",
       techStack: ["Java", "Java Threads", "CLI"],
       category: "Software",
-      year: "2023",
+      year: "2024",
       status: "completed",
       highlights: [
         "CLI based automatic bidding system"
@@ -189,7 +237,7 @@ export const timelineProjects: TimelineProject[] = [
       description: "Developed a basic, command-line version of the classic Flappy Bird game, focusing on fundamental Java programming concepts and game loop logic.",
       techStack: ["Java", "CLI"],
       category: "Software",
-      year: "2024",
+      year: "2025",
       status: "completed",
       highlights: [
         "Interactive CLI based game"

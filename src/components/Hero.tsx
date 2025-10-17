@@ -49,7 +49,7 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-xl lg:text-2xl text-muted-foreground font-medium"
             >
-              Full Stack Developer | AI & ML Enthusiast
+              AI Engineer | Full Stack Developer | Python Specialist
             </motion.p>
             
             <motion.p
@@ -58,7 +58,8 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="text-lg text-muted-foreground max-w-lg leading-relaxed"
             >
-              Building scalable platforms, intelligent systems, and real-time 3D AI experiences.
+              Creating intelligent AI agents, healthcare platforms, and immersive 3D experiences. 
+              Specializing in computer vision, NLP, and scalable web applications with modern tech stacks.
             </motion.p>
           </div>
 

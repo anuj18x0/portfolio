@@ -10,7 +10,8 @@ import {
   Users, 
   TrendingUp,
   Award,
-  ChevronRight
+  ChevronRight,
+  X
 } from "lucide-react";
 import { TimelineProject as ProjectType } from "@/lib/timelineData";
 import { useState } from "react";
@@ -25,6 +26,7 @@ interface TimelineProjectProps {
 const TimelineProject = ({ project, index, isVisible }: TimelineProjectProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   const handleShare = async () => {
     const shareData = {
@@ -174,7 +176,34 @@ const TimelineProject = ({ project, index, isVisible }: TimelineProjectProps) =>
               </Button>
 
               <div className="flex items-center gap-2">
-                {project.links?.demo && (
+                {/* Show video modal for 3D Avatar project, else normal demo link */}
+                {project.id === "3d-therapist" && project.links?.demo && project.links.demo !== "#" && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="glass-card hover:bg-primary/10"
+                    asChild
+                  >
+                    <a href="/avatar-demo">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
+                    </a>
+                  </Button>
+                )}
+                {project.id === "ai-business-analyst" && project.links?.demo && project.links.demo !== "#" && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="glass-card hover:bg-primary/10"
+                    asChild
+                  >
+                    <a href="/ai-agent-demo">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
+                    </a>
+                  </Button>
+                )}
+                {project.id !== "3d-therapist" && project.id !== "ai-business-analyst" && project.links?.demo && project.links.demo !== "#" && (
                   <Button
                     variant="outline"
                     size="sm"
@@ -188,7 +217,7 @@ const TimelineProject = ({ project, index, isVisible }: TimelineProjectProps) =>
                   </Button>
                 )}
 
-                {project.links?.github && (
+                {project.links?.github && project.links.github !== "#" && (
                   <Button
                     variant="outline"
                     size="sm"
