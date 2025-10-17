@@ -37,7 +37,7 @@ export const timelineProjects: TimelineProject[] = [
       impact: "95% time savings as compared to manual analysis"
     },
     links: {
-      demo: "/ai-agent-demo.mp4",
+      demo: "https://drive.google.com/uc?export=download&id=1ULs6_8nAmrCLNRPaweGnpr7Mo0bzrAF8",
       github: "#"
     },
     highlights: [
@@ -85,7 +85,7 @@ export const timelineProjects: TimelineProject[] = [
       performance: "98% accuracy",
     },
     links: {
-      demo: "/3d-talking-avatar.mp4",
+      demo: "https://drive.google.com/uc?export=download&id=1xMzJf8mV21vLrYekmYr8OfC__UHiXlV_",
       github: "#"
     },
     highlights: [

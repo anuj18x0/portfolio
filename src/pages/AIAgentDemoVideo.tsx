@@ -34,21 +34,18 @@ const AIAgentDemoVideo = () => {
       >
         Close
       </button>
-      <video
-        src="/ai-agent-demo.mp4"
-        controls
-        autoPlay
+      <iframe
+        src="https://drive.google.com/file/d/1ULs6_8nAmrCLNRPaweGnpr7Mo0bzrAF8/preview"
+        width="90%"
+        height="90%"
+        allow="autoplay"
         style={{
-          width: "90vw",
-          height: "90vh",
-          maxWidth: 1200,
-          maxHeight: 700,
           borderRadius: 16,
-          background: "#000"
+          border: "none",
+          maxWidth: 1200,
+          maxHeight: 700
         }}
-      >
-        Your browser does not support the video tag.
-      </video>
+      />
     </div>
   );
 };
