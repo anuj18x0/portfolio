@@ -22,7 +22,7 @@ const AnimatedSphere = () => {
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden animated-bg">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden animated-bg pt-16 md:pt-0">
       <div className="absolute inset-0 cyber-grid opacity-20" />
       
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -38,7 +38,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="heading-display text-6xl lg:text-8xl"
+              className="heading-display text-4xl sm:text-6xl lg:text-8xl"
             >
               Arth <span className="text-gradient">Arvind</span>
             </motion.h1>
@@ -93,9 +93,24 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="relative h-96 lg:h-[500px]"
         >
-          <Canvas camera={{ position: [0, 0, 5] }}>
+          <Canvas 
+            camera={{ position: [0, 0, 5] }}
+            style={{
+              width: '100%',
+              height: '100%',
+              pointerEvents: 'none',
+              touchAction: 'pan-y'
+            }}
+          >
             <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={2} />
+              <OrbitControls 
+                enableZoom={false} 
+                autoRotate 
+                autoRotateSpeed={2}
+                enabled={false}
+                enablePan={false}
+                enableRotate={false}
+              />
               <ambientLight intensity={0.5} />
               <directionalLight position={[10, 10, 5]} intensity={1} />
               <AnimatedSphere />
@@ -107,11 +122,13 @@ const Hero = () => {
             animate={{ y: [-10, 10, -10] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-10 right-10 w-20 h-20 glass-card rounded-full glow-secondary"
+            style={{ pointerEvents: 'none' }}
           />
           <motion.div
             animate={{ y: [10, -10, 10] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             className="absolute bottom-20 left-10 w-16 h-16 glass-card rounded-full glow-primary"
+            style={{ pointerEvents: 'none' }}
           />
         </motion.div>
       </div>

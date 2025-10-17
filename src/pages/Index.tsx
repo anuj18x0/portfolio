@@ -7,22 +7,22 @@ import CallToAction from "@/components/CallToAction";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
-      <main>
-        <section id="hero">
+      <main className="relative">
+        <section id="hero" className="scroll-mt-16">
           <Hero />
         </section>
-        <section id="about">
+        <section id="about" className="scroll-mt-16">
           <About />
         </section>
-        <section id="education">
+        <section id="education" className="scroll-mt-16">
           <Education />
         </section>
-        <section id="projects">
+        <section id="projects" className="scroll-mt-16">
           <Timeline />
         </section>
-        <section id="contact">
+        <section id="contact" className="scroll-mt-16">
           <CallToAction />
         </section>
       </main>

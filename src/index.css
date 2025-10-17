@@ -183,4 +183,77 @@
     color: hsl(var(--foreground));
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
+
+  /* Mobile Optimizations */
+  @media (max-width: 768px) {
+    body {
+      /* Prevent horizontal scroll */
+      overflow-x: hidden;
+      /* Enable smooth scrolling on mobile */
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Ensure proper mobile viewport */
+    .min-h-screen {
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+    }
+
+    /* Mobile text sizing */
+    .heading-display {
+      line-height: 1.1;
+    }
+
+    /* Touch-friendly buttons */
+    button, .button, a[role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+      touch-action: manipulation;
+    }
+
+    /* Mobile-specific 3D canvas behavior */
+    .touch-none {
+      touch-action: none !important;
+      pointer-events: none !important;
+    }
+    
+    /* Ensure canvas doesn't interfere with mobile scroll */
+    canvas {
+      touch-action: pan-y pan-x !important;
+    }
+    
+    /* Force scroll behavior on mobile containers */
+    .pointer-events-none canvas {
+      pointer-events: none !important;
+      touch-action: manipulation !important;
+    }
+
+    /* Mobile navigation adjustments */
+    .glass-card {
+      backdrop-filter: blur(8px);
+    }
+
+    /* Reduce motion for mobile performance */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  }
+
+  /* Landscape mobile specific */
+  @media (max-width: 768px) and (orientation: landscape) {
+    /* Adjust hero section for landscape */
+    .min-h-screen {
+      min-height: 100vh;
+      padding-top: 4rem;
+    }
+    
+    /* Smaller text in landscape */
+    .heading-display {
+      font-size: clamp(2rem, 8vw, 4rem);
+    }
+  }
 }
